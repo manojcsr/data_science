@@ -1,0 +1,32 @@
+Category,T5 (Encoder–Decoder),GPT-5.1 (Decoder-Only)
+Architecture Type,Seq2Seq (Encoder → Decoder),Causal LM (Decoder-Only)
+High-Level Structure,"Two Transformer stacks: Encoder bidirectional, Decoder autoregressive + cross-attn","Single Transformer stack, autoregressive"
+Attention Style,Bidirectional encoder; decoder self-attn + cross-attn,Causal self-attention only
+How Input Is Processed,Input fully encoded into semantic representation,Input treated as prefix tokens
+How Output Is Generated,Decoder conditions on encoder + past tokens,Generates next token iteratively
+Example Input → Output,Input: 'summarize: ...' → Output summary,Input: 'Summarize this...' → output (may drift)
+Typical Invocation,AutoModelForSeq2SeqLM,AutoModelForCausalLM
+Efficiency: Long Inputs,Very efficient (encoder runs once),Inefficient (re-attends full prompt every step)
+Hallucination Risk,Low,High unless RLHF
+Faithfulness to Input,High faithfulness,Moderate
+Structured Generation,Excellent for structured forms,Good but flexible (may ignore formats)
+Long-Form Reasoning,Weak,Strong
+Multimodality,Text only,Multimodal
+Context Window,512–4096 tokens,64k–200k depending on version
+Scaling Laws,Saturates earlier,Improves dramatically with scale
+Pretraining Objective,Span corruption,Next-token prediction
+Core Philosophy,Task-to-text philosophy,General intelligence philosophy
+Performance on Translation,Excellent,Good but less aligned
+Performance on Summarization,Excellent,Good but verbose
+Performance on Classification,Strong,Strong zero-shot
+Performance on Extraction (NER/Q&A),Strong,May hallucinate missing facts
+Performance on Coding,Weak,Strong
+Tool Use / Agent Behavior,Not designed for tools,Excellent for agents
+Fine-Tuning Cost,Low,High
+Inference Cost,Low for input-heavy tasks,High for long inputs
+Best Use Cases,"Summaries, translation, extraction, transformation","Chat, reasoning, agents, coding"
+Weaknesses,No deep reasoning,"Expensive inference, hallucinations"
+Example Where T5 Wins,Extract adverse events from long clinical note,"Summaries possible but slower, may add inference"
+Example Where GPT Wins,Fails complex reasoning tasks,Excellent at reasoning + coding
+Why This Difference Exists,Built for NLP tasks,Built for general reasoning
+Industry Usage,Used in pipelines needing determinism,Used in assistants and agent systems

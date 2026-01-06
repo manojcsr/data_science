@@ -1,0 +1,33 @@
+Dimension,LangChain,LangGraph,LangSmith,LangFuse
+Primary Role,LLM application development framework,Multi-agent orchestration & control flow,"LLM debugging, testing & evaluation",Production observability & governance
+Problem Solved,How to build LLM-powered apps,How to coordinate complex agent workflows,Why the LLM behaved this way,How the LLM system behaves in production
+Target Audience,"Developers, AI engineers","AI architects, platform teams","LLM engineers, researchers","CTO, MLOps, Platform & Ops teams"
+Typical Maturity Stage,Prototype → Production,Advanced / Enterprise systems,Development & QA,Production / Scale
+Vendor / Origin,LangChain,LangChain,LangChain,Open-source (independent)
+Runtime Component,Yes,Yes,No,No
+Orchestration Capability,Limited (manual),"First-class (graphs, state)",None,None
+Root Agent Concept,No,Yes (entry node),No,No
+State Management,Basic memory,"Centralized, explicit state",Not applicable,Not applicable
+Branching & Loops,No,Yes,No,No
+Retries & Recovery,No,Yes,No,No
+Prompt Management,Templates & messages,Via LangChain,Prompt versioning & comparison,Prompt tracking & analytics
+Agent Support,Yes,Yes (multi-agent),No,No
+Tool Calling,Yes,Yes,No,No
+RAG Support,"Yes (loaders, splitters, retrievers)",Workflow only,RAG evaluation metrics,RAG performance metrics
+Vector DB Integration,Yes,Via LangChain,No,No
+Memory / Conversation History,Yes,Advanced,No,No
+Tracing,Basic,Basic,Deep (step-level),Deep (prod-grade)
+Evaluation / Testing,No,No,Yes,No
+Prompt Regression Testing,No,No,Yes,No
+Dataset-based Evaluation,No,No,Yes,No
+Latency Monitoring,No,No,Limited,Yes
+Cost / Token Tracking,No,No,Limited,Yes
+User / Session Analytics,No,No,No,Yes
+Production Monitoring,No,No,No,Yes
+Alerting,No,No,No,Yes
+Self-hosting Option,Yes,Yes,No (SaaS),Yes
+Data Residency Friendly,Yes,Yes,Limited,Yes
+Vendor Lock-in Risk,Low,Low,Medium,Very Low
+When to Use,Always for building LLM apps,When workflows get complex,During dev & QA cycles,When running LLMs at scale
+When NOT to Use,Not useful without LLMs,Overkill for linear flows,Not for runtime logic,Not for app logic
+Closest Analogy,SDK / Framework,Workflow engine / ADK,Test harness,Datadog for LLMs

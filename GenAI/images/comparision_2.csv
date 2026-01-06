@@ -1,0 +1,18 @@
+Dimension,LangChain,LangGraph,LlamaIndex,CrewAI,AutoGen,Semantic Kernel,Haystack,DSPy,Google ADK
+Primary purpose,Build LLM apps,Orchestrate multi-agent workflows,Data & RAG framework,Role-based agent teams,Conversational agents,Enterprise LLM orchestration,Search-centric QA/RAG,Prompt & retrieval optimization,Enterprise agent platform
+Strategic role,Core SDK,Control plane / Root Agent,Knowledge layer,Collaboration layer,Research & simulation,Enterprise SDK,Production QA system,Research framework,Platform foundation
+Single-agent support,Yes,Yes,Yes,Yes,Yes,Yes,Limited,No,Yes
+Multi-agent support,Manual,Native,Limited,Native,Native,Limited,Limited,No,Native
+Explicit Root Agent,No,Yes,No,No,No,No,No,No,Yes
+Workflow graph / DAG,No,Yes,No,No,No,No,No,No,Yes
+Branching & loops,No,Yes,No,No,Limited,No,No,No,Yes
+Shared state across agents,No,Yes,No,No,Partial,No,No,No,Yes
+Retries & recovery,No,Yes,No,No,No,No,No,No,Yes
+Human-in-the-loop,No,Yes,No,No,No,No,No,No,Yes
+Tool calling,Yes,Yes,Partial,Limited,Limited,Yes,Limited,No,Yes
+Memory / conversation history,Basic,Advanced,Limited,No,Limited,Limited,Limited,No,Advanced
+Built-in RAG,Yes,Via LangChain,Native,No,No,Limited,Native,Partial,Limited
+Vector DB abstraction,Yes,Via LangChain,Yes,No,No,Limited,Yes,No,Limited
+Production readiness,High,High,Medium,Low,Low,High,High,Low,Very High
+Enterprise governance,No,No,No,No,No,Partial,Partial,No,Yes
+Typical adoption stage,Prototype → Prod,Complex systems,Data-heavy RAG,Experiments,Research,Enterprise apps,Enterprise search,Research,Large enterprises

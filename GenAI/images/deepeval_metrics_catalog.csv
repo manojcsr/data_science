@@ -1,0 +1,28 @@
+Metric,Category,What_it_Measures,When_to_Use,Required_Inputs
+AnswerRelevancyMetric,Answer Quality,Whether the answer addresses the user question,Detect off-topic or generic answers,"input, actual_output"
+CorrectnessMetric,Answer Quality,Factual and logical correctness vs reference,When ground truth exists,"input, actual_output, expected_output"
+CompletenessMetric,Answer Quality,Coverage of all required aspects,Multi-part questions,"input, actual_output, expected_output"
+ClarityMetric,Answer Quality,Readability and understandability,User-facing assistants,actual_output
+ConcisenessMetric,Answer Quality,Appropriate brevity without loss,"Chatbots, summaries",actual_output
+GEval,Custom / General,Rubric-based custom evaluation,"Flexible, reference-free evaluation","input, actual_output, expected_output (any subset)"
+FaithfulnessMetric,RAG,Claims supported by retrieved context,Hallucination control,"actual_output, retrieval_context"
+ContextRelevancyMetric,RAG,Relevance of retrieved context,Retrieval quality checks,"input, retrieval_context"
+ContextPrecisionMetric,RAG,Usefulness of retrieved context,Over-retrieval analysis,"input, retrieval_context"
+ContextRecallMetric,RAG,Whether all required info was retrieved,Recall-focused tuning,"input, retrieval_context, expected_output"
+AnswerGroundednessMetric,RAG,Degree of grounding in context,Trust & explainability,"actual_output, retrieval_context"
+HallucinationMetric,RAG / Safety,Unsupported or fabricated claims,High-risk domains,"actual_output, retrieval_context"
+RetrievalRelevancyMetric,Retrieval,Match between query and retrieved docs,Search tuning,"input, retrieval_context"
+RankingMetric,Retrieval,Quality of document ranking,Reranker evaluation,"input, retrieval_context"
+ToxicityMetric,Safety,Offensive or harmful language,Public systems,actual_output
+BiasMetric,Safety,Unfair bias against groups,Responsible AI audits,actual_output
+HateSpeechMetric,Safety,Hate or discriminatory language,Moderation,actual_output
+PIILeakageMetric,Safety / Compliance,Personal data leakage,Regulated environments,actual_output
+SelfHarmMetric,Safety,Self-harm related content,Safety-critical assistants,actual_output
+ToolCorrectnessMetric,Agent,Correct tool selection,Agentic workflows,"input, tool_calls"
+ToolArgumentCorrectnessMetric,Agent,Correctness of tool arguments,Function-calling agents,tool_calls
+PlanningMetric,Agent,Quality of agent plans,Multi-step reasoning,"input, agent_trace"
+TaskCompletionMetric,Agent,Task successfully completed,End-to-end agent eval,"input, actual_output"
+BLEUMetric,Legacy Text,N-gram precision overlap,Legacy MT,"actual_output, expected_output"
+ROUGEMetric,Legacy Text,Recall-oriented n-gram overlap,Summarization,"actual_output, expected_output"
+METEORMetric,Legacy Text,Token + synonym overlap,Lexical similarity,"actual_output, expected_output"
+BERTScoreMetric,Legacy Text,Embedding-based semantic similarity,Semantic comparison,"actual_output, expected_output"

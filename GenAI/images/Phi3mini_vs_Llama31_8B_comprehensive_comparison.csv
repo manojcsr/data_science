@@ -1,0 +1,33 @@
+Dimension,Phi-3-mini-4k-instruct,Llama-3.1-8B-Instruct
+Publisher / Model repo,microsoft/Phi-3-mini-4k-instruct,meta-llama/Llama-3.1-8B-Instruct
+Parameter count,~3.8B parameters,~8B parameters
+Model type,Decoder-only Transformer (causal LM),Decoder-only Transformer (causal LM)
+Instruction tuning,Instruct-tuned (chat),Instruct-tuned (chat)
+Context length (max),4K tokens,128K tokens
+Tokenizer vocab size,"32,064 tokens","≈128K tokens (128,256)"
+Primary strengths,"Efficiency, strong reasoning per-parameter, edge/local use","Long-context, broader capability, multilingual dialogue"
+Long-document tasks,Limited (4K window),Strong (128K window)
+RAG suitability,Best for short-context RAG / low-cost QA,Best for long-context RAG / multi-doc synthesis
+Multilingual focus,More English-centric,Explicit multilingual dialogue focus (8 languages+)
+Prompt formatting,Chat template required for best results,Chat template required for best results
+Typical output style,"Concise, direct","More verbose, nuanced"
+Consistency across tasks,High for its size; may hit capacity limits,Higher overall ceiling; more robust generalist
+Latency / throughput,Lower latency; higher tokens/sec on same hardware,Higher latency; lower tokens/sec on same hardware
+CPU feasibility,Good (especially quantized),Possible but heavier; quantization usually needed
+GPU VRAM (FP16 ballpark),Lower (often fits 6–8GB),Higher (often needs ~16GB+ depending on runtime)
+Quantization friendliness,Very friendly (4-bit common),"Very friendly, but bigger model"
+Edge / mobile suitability,Strong candidate for on-device,Less suitable on-device (unless heavy quantization)
+Max batch / concurrency,Higher for same GPU,Lower for same GPU
+Cost per token (self-hosted),Lower,Higher
+Best use cases,"On-device assistants, low-cost chat, small RAG, coding helpers","Enterprise assistants, long-context agents, doc QA at scale"
+Worst-fit use cases,"Long PDFs, long conversations",Ultra-low latency edge scenarios
+Attention optimization,Standard modern attention; benefits from KV-cache,Standard modern attention; benefits from KV-cache
+Generation (autoregressive),Sequential token generation; supports KV-cache,Sequential token generation; supports KV-cache
+Safety / guardrails,Model card policies vary; depends on deployment,Meta ecosystem includes Guard models (Llama Guard)
+License,Microsoft model license (see HF card),Meta Llama 3.1 license (see HF repo)
+Commercial use,Generally allowed under license terms (verify),Allowed under license terms (verify)
+Ecosystem maturity,Growing; strong HF + ONNX/GGUF variants,Very large ecosystem; extensive tooling & community
+Common runtimes,"Transformers, ONNX Runtime, GGUF/llama.cpp builds available","Transformers, vLLM/TGI, GGUF/llama.cpp builds available"
+Fine-tuning (LoRA),"Cheaper, faster",More compute but higher ceiling
+Embedding / retrieval role,Primarily generator; can be used for rerank/light tasks,Primarily generator; strong for synthesis and tool use
+When to choose,If you need speed/cost/edge and short context,If you need long context and stronger overall capability
