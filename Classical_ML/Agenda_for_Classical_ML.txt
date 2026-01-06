@@ -1,0 +1,58 @@
+1.      General model concepts
+                Overfitting vs underfitting
+                Complex vs Simple model
+                Bias-variance tradeoff
+                Sweet spot and generalization
+                Power of data
+                Parametric vs Non-parametric model
+                Regularization (L1 and L2)
+                Linear vs Non-linear models
+                Curse of dimensionality
+                Scaling of features
+                Distance measures
+
+2.      KNN algorithm
+                KNN classifier
+                IRIS classification using KNN algorithm
+                Advantages & Disadvantages of KNN algorithm
+                Uncertainty estimates in classifiers - Predicting probabilities
+                Evaluation metrics in classification
+                        Confusion matrix
+                        Precision, Recall, FPR, F1 score, ROC-AUC
+                Spam email classification using KNN algorithm
+
+                KNN Regressor
+                California housing classification using KNN
+                        First iteration
+                        Second iteration with Scaling techniques 
+                Evaluation metrics
+                        Mean Absolute Error
+                        Mean Squared error
+                        Root mean squared error
+                        Median absolute error
+                        Mean absolute percentage error
+                        R squared (co-efficient of determination)
+                        Adjusted R squared
+                Cross validation to choose optimal k
+                Prediction of wine qualtiy using KNN classification and regression
+        
+3.      Linear models
+                Linear regression
+                        Ordinary Least Squares or Simple Linear regression and Multiple linear regression
+                        Bias-variance trade off and Learning curve
+                        Assumptions of Linear regression
+                        Feature engineering - Polynomial terms to handle non-linearity & Interaction terms
+                        viewing coefficients and their importance
+                        Regularization techniques - Lasso and Ridge
+                        Strengths, Weaknesses and Use cases
+                Logistic regression
+                        Working of Logistic Regression
+                        predict_proba revisited - how it is different from knn classifier
+                        why do we need to modify threshold ?
+                        Regularization techniques - Lasso and Ridge
+                        viewing coefficients and their importance
+                        Advantages, Disadvantages and Use cases
+4.  Pending concepts
+        GridSearchCV
+        SMOTE
+        Different encoding techniques

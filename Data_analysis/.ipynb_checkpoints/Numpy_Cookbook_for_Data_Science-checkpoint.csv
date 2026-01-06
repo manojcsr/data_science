@@ -1,0 +1,21 @@
+Topic,Function/Concept,Description
+Creating Arrays,"np.array(), np.zeros(), np.ones(), np.arange(), np.linspace(), np.full()","Create arrays of various shapes, sizes, and initialization strategies."
+Array Attributes,"ndarray.shape, ndarray.size, ndarray.ndim, ndarray.dtype","Understand the shape, size, number of dimensions, and data type of arrays."
+Indexing & Slicing,"arr[1], arr[1:5], arr[:,0], arr[::2], arr[::-1]","Access individual elements, rows, columns, and slices of arrays using Python slicing."
+Array Operations,"arr + arr, arr * 2, arr ** 2, arr.T, np.add(), np.multiply()",Perform element-wise operations and matrix transposition efficiently.
+Broadcasting,Automatic broadcasting of shapes during operations,Leverage NumPy's broadcasting rules to perform operations on arrays of different shapes.
+Mathematical Functions,"np.sin(), np.log(), np.exp(), np.sqrt(), np.round()",Use mathematical functions directly on arrays for transformations and analysis.
+Aggregation Functions,"np.sum(), np.mean(), np.std(), np.min(), np.max(), axis parameter","Compute aggregated values like total, mean, and standard deviation across axes."
+Boolean Masking,"arr[arr > 5], arr[(arr > 5) & (arr < 10)]",Filter arrays based on conditionals and apply logical indexing.
+Fancy Indexing,"arr[[1, 3, 5]], arr[np.array([1, 2])]","Select specific rows, columns, or elements using indices or index arrays."
+Reshaping Arrays,"arr.reshape(), arr.flatten(), arr.ravel()",Change the shape or layout of arrays without copying data (if possible).
+Stacking Arrays,"np.hstack(), np.vstack(), np.stack(), np.column_stack()",Combine arrays along different axes to form new structured arrays.
+Splitting Arrays,"np.split(), np.hsplit(), np.vsplit(), np.array_split()",Split arrays into smaller sub-arrays along specified axes.
+Random Number Generation,"np.random.rand(), np.random.randn(), np.random.randint(), np.random.seed()",Generate random numbers from various distributions and control randomness with seeds.
+Linear Algebra,"np.dot(), np.matmul(), np.linalg.inv(), np.linalg.det(), np.linalg.eig()",Perform core linear algebra operations like dot product and matrix inversion.
+Set Operations,"np.unique(), np.intersect1d(), np.setdiff1d(), np.union1d()","Apply operations to get unique elements, find intersections, and union of arrays."
+Data Types,"np.dtype(), arr.astype()",Specify and convert between data types for memory and type control.
+Copy vs View,arr.copy() vs arr.view(),Understand memory behavior by comparing views (shallow) and copies (deep).
+File I/O,"np.save(), np.load(), np.savetxt(), np.genfromtxt()",Read/write binary or text files for storing or retrieving array data.
+NaN and Inf Handling,"np.isnan(), np.isinf(), np.nan_to_num()",Handle special values like NaN and infinity gracefully in computations.
+Vectorization,Replacing loops with array operations for performance,Optimize loops by using vectorized array computations for speed gains.
