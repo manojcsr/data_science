@@ -1,0 +1,16 @@
+Hyperparameter,Applies To,Meaning (Layman Explanation),Significance (Why It Matters)
+criterion,Both,"The formula used to decide the 'best split' (e.g., Gini, Entropy, or Log Loss for classification; MSE for regression).",Determines how the model measures impurity — affects how splits are chosen.
+max_depth,Both,The maximum number of levels (layers) in the tree.,Controls how complex the model can get. Limiting depth reduces overfitting.
+min_samples_split,Both,The minimum number of samples required to split a node into two branches.,Prevents overfitting by avoiding splits on very small sample groups.
+min_samples_leaf,Both,The minimum number of samples required in a leaf node (final branch).,Ensures leaves represent enough data — smoother predictions and better generalization.
+max_features,Both (key in Random Forest),The number of features the model can consider when making a split.,"Introduces randomness and helps balance accuracy vs. speed. In Random Forest, promotes diversity among trees."
+max_leaf_nodes,Decision Tree,Sets a limit on the number of leaf nodes in the tree.,Simplifies the model and reduces overfitting by restricting structure size.
+min_impurity_decrease,Decision Tree,The minimum drop in impurity required to make a split.,Prevents unnecessary splits that don’t improve performance significantly.
+splitter,Decision Tree,The strategy for choosing splits: 'best' (best possible) or 'random'.,Affects tree randomness and speed — 'best' is accurate; 'random' adds slight randomness.
+random_state,Both,Sets a seed for reproducibility of results.,Ensures consistent output when you rerun experiments.
+n_estimators,Random Forest,The number of trees in the forest.,"More trees = more stable and accurate predictions, but slower training."
+bootstrap,Random Forest,Whether each tree uses a random subset of data (sampling with replacement).,Increases diversity among trees → improves generalization and reduces overfitting.
+n_jobs,Random Forest,Number of CPU cores to use for training in parallel.,"Speeds up training, especially with many trees."
+max_samples,Random Forest,Fraction or number of training samples used per tree.,Helps control randomness and training speed — smaller samples add variety.
+oob_score,Random Forest,Whether to use 'out-of-bag' samples (unused data) to evaluate model performance.,Provides a built-in unbiased estimate of accuracy without a separate test set.
+warm_start,Random Forest,Reuses previously fitted trees when adding new ones.,Saves time if you’re experimenting with more trees iteratively.

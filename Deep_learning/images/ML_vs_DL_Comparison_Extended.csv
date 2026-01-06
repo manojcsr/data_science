@@ -1,0 +1,23 @@
+Aspect,Machine Learning (ML),Deep Learning (DL)
+Core Idea,"Learns patterns from data using algorithms like decision trees, SVMs, or regression.",Learns complex representations using multi-layered neural networks that mimic the human brain.
+Feature Engineering,Requires manual feature selection — data scientists must choose and transform features.,Automatically extracts features from raw data with minimal human intervention.
+Data Requirement,Works well with small to medium datasets.,Needs large amounts of data to perform well and avoid overfitting.
+Computation Power,Runs efficiently on CPUs; less hardware-intensive.,Requires high-performance GPUs/TPUs due to heavy matrix computations.
+Interpretability,"Easier to explain and visualize (e.g., decision trees, linear regression).",Often seen as a black box — harder to interpret how decisions are made.
+Training Time,Fast to train; suitable for quick experimentation.,Very time-intensive due to millions of parameters and iterative optimization.
+Performance on Complex Data,"Limited — struggles with unstructured data like images, audio, and natural language.","Excels at complex, high-dimensional data (vision, speech, NLP)."
+Dependence on Domain Knowledge,High — human intuition guides model design and feature creation.,Low — the model learns representations automatically from raw input.
+Model Complexity,"Simpler architectures, fewer parameters.",Deep architectures with multiple hidden layers and millions of parameters.
+Deployment & Maintenance,"Lightweight, easy to deploy and update.",Heavy and complex; needs specialized infrastructure for deployment.
+Examples,"Linear Regression, Random Forest, SVM, K-Means.","CNNs (image), RNNs/LSTMs (text), Transformers (language models)."
+Best Use Cases,"Structured data, tabular datasets, small-scale business analytics.","Unstructured data, computer vision, NLP, speech recognition, autonomous systems."
+Error Handling,Easier to detect and correct model errors; simpler debugging process.,Error detection is harder due to complex inter-layer dependencies.
+Scalability,Highly scalable for small and medium datasets but less efficient on very large-scale systems.,Highly scalable — performs better with distributed GPU/TPU clusters.
+Energy Efficiency,Consumes less energy due to lighter computations.,Energy-hungry; requires more power for training and inference.
+Overfitting Tendency,Moderate — can be controlled with regularization and cross-validation.,High risk — can easily overfit without large data or dropout techniques.
+Model Update Frequency,Easier to retrain or update models incrementally without high costs.,Updating models requires retraining large networks — computationally expensive.
+Human Expertise Required,Requires significant domain and statistical expertise for best performance.,Less dependent on human expertise once designed — relies on data volume and architecture tuning.
+Latency in Inference,Low latency — suitable for real-time and edge applications.,May have higher latency due to complex computations in deep layers.
+Explainability Tools,"Interpretability tools are mature (e.g., SHAP, LIME).","Explainability tools are emerging (e.g., Grad-CAM, Integrated Gradients)."
+Data Type Compatibility,"Primarily suited for structured, numerical, and categorical data.","Handles structured, semi-structured, and unstructured data seamlessly."
+Adaptability to New Tasks,Can be adapted easily to new problems by modifying features and algorithms.,Shows strong transfer learning capabilities — can adapt to new tasks with minimal retraining.

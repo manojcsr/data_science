@@ -1,0 +1,9 @@
+Strengths,Weaknesses
+"Simple & Interpretable – easy to understand, explain, and implement.","Linearity Assumption – cannot capture complex, non-linear patterns unless you add transformations."
+"Computationally Efficient – very fast to train, even on large datasets.",Sensitive to Outliers – a single extreme value can distort coefficients and predictions.
+Provides Feature Importance – coefficients show influence of predictors.,Multicollinearity Problem – highly correlated predictors make coefficients unstable and hard to interpret.
+"Statistical Inference – supports confidence intervals, hypothesis tests, and p-values.","Assumptions Must Hold – violations (non-normal errors, heteroscedasticity, dependence) lead to unreliable results."
+Works Well with Linear Relationships – gives unbiased and efficient estimates when assumptions are satisfied.,"Limited Expressiveness – can only naturally model additive, linear effects (no thresholds or complex interactions unless added manually)."
+Extensible – can add polynomial/interaction terms or use regularization (Ridge/Lasso).,Extrapolation Risk – predictions outside training range are unreliable.
+Good Baseline Model – useful starting point before applying complex ML models.,Not Robust for High Dimensions – overfits when predictors >> observations unless regularized.
+"Interpretability Matters – often used in economics, healthcare, and social sciences.","Not Suitable for Complex Data Types – cannot handle images, text, or sequences without preprocessing."

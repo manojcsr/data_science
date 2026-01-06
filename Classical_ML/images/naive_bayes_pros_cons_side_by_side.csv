@@ -1,0 +1,8 @@
+Advantages,Disadvantages
+Simple and fast – easy to implement with low computational cost.,Strong independence assumption rarely holds in real-world data.
+"Efficient with high-dimensional data (e.g., text classification).",Zero probability problem if feature not seen in training (fixed with Laplace smoothing).
+Requires small amount of training data for parameter estimation.,Poor with continuous features unless Gaussian assumption holds.
+Handles categorical inputs naturally.,Less flexible; complex models outperform NB on difficult tasks.
+Performs well even if independence assumption is violated.,Requires feature engineering for best performance.
+Robust to irrelevant features (they often cancel out).,Not suitable for regression tasks (only classification).
+Provides probabilistic interpretation (class probabilities).,

@@ -1,0 +1,10 @@
+Feature,Support Vector Classification (SVC),Logistic Regression
+Model Type,Geometric model.,"Statistical, probabilistic model."
+Core Principle,Maximizes the margin (distance) between the decision boundary and the nearest data points (support vectors).,Maximizes the likelihood of the training data.
+Decision Boundary,Can be linear or non-linear using the kernel trick.,"Linear decision boundary (can handle non-linearity through feature engineering, but it's not inherent to the algorithm)."
+Handling Outliers,More robust to outliers because it only focuses on the data points closest to the margin (support vectors).,Can be sensitive to outliers because all data points influence the optimal decision boundary.
+Output,"By default, outputs a hard class label (-1 or 1). Requires additional processing to output probabilities.",Naturally outputs a probability score between 0 and 1 via the sigmoid function.
+Interpretability,"Less interpretable, especially with non-linear kernels, as it's hard to understand the effect of individual features on the classification.","Highly interpretable, as the coefficients directly indicate the change in log-odds associated with a unit change in each feature."
+Use Cases,"Best for complex, non-linear data and high-dimensional feature spaces (e.g., text and image classification). Works well on smaller datasets.","Good for linearly separable data, large datasets, and when model interpretability and probability estimates are important (e.g., credit scoring, medical diagnosis)."
+Scalability,Computationally more expensive and scales less efficiently with large datasets (training time can be quadratic or cubic in the number of training samples).,"Computationally efficient and scales well to large datasets, with training time typically scaling linearly with the number of samples."
+Complexity,"More complex to tune, with multiple hyperparameters like C, kernel, gamma, etc..","Simpler to tune, with the regularization parameter C being the main hyperparameter."

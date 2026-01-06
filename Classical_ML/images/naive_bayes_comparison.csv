@@ -1,0 +1,4 @@
+Algorithm,Description,Typical Use Cases,Key Benefits
+Gaussian Naïve Bayes,Assumes features are continuous and follow a normal (Gaussian) distribution.,"Medical test values, sensor measurements, continuous numeric datasets.","Works well with continuous data, simple & fast, requires fewer data points."
+Multinomial Naïve Bayes,Assumes features are counts (frequency of words/events). Uses multinomial distribution.,"Text classification (spam detection, topic modeling, sentiment analysis).","Naturally handles word counts, great for high-dimensional data, strong in NLP tasks."
+Bernoulli Naïve Bayes,"Assumes features are binary (yes/no, 0/1). Uses Bernoulli distribution.","Document classification (presence/absence of words), sentiment classification, recommendation with binary features.","Useful when frequency doesn’t matter, handles sparse binary data, simpler representation in NLP tasks."

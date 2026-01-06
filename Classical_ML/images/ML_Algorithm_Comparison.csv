@@ -1,0 +1,84 @@
+Algorithm,Pros,Cons,Use Cases
+Decision Tree,"• Easy to understand and visualize
+• Handles categorical & numerical data
+• Captures non-linear relationships
+• Requires little preprocessing (no scaling)
+• Handles missing values and outliers fairly well
+• Fast training & prediction
+• Provides feature importance","• Prone to overfitting (especially deep trees)
+• Unstable — small data changes can alter structure
+• Greedy splits may miss global optimum
+• Poor extrapolation beyond training data
+• Produces step-like regression outputs","• Credit risk scoring
+• Medical decision support
+• Customer churn analysis
+• Education analytics
+• Explainable business rules"
+Random Forest,"• Reduces overfitting via ensemble averaging
+• Robust to noise & outliers
+• Handles non-linear data well
+• Works with large feature sets
+• Provides reliable feature importance
+• Supports both regression & classification","• Less interpretable than a single tree
+• Slower training/inference for large data
+• Memory-intensive (stores many trees)
+• Slight bias toward features with many levels
+• Not ideal for sparse, text-like data","• Fraud detection
+• Healthcare analytics
+• E-commerce recommendations
+• Manufacturing defect prediction
+• Financial forecasting"
+SVM (Support Vector Machine),"• Excellent for high-dimensional data (text, images)
+• Works well with clear class separation
+• Kernel trick models complex non-linear patterns
+• Robust generalization on small/medium data
+• Memory-efficient — depends on support vectors","• Computationally expensive for large datasets
+• Requires kernel & parameter tuning
+• Sensitive to noise and overlapping classes
+• No direct probability outputs
+• Not easily interpretable","• Image & handwriting recognition
+• Text categorization / spam filtering
+• Sentiment analysis
+• Facial recognition
+• Disease classification"
+K-Nearest Neighbors (KNN),"• Very simple and intuitive
+• No training phase (lazy learner)
+• Works well with well-distributed data
+• Naturally handles multi-class problems
+• Non-parametric — no assumption about data distribution","• Slow prediction on large datasets (computes distance for all points)
+• Requires scaling of features
+• Sensitive to irrelevant features & noise
+• Struggles in high dimensions (curse of dimensionality)
+• Storage-intensive","• Recommendation systems
+• Image recognition (e.g., handwritten digits)
+• Pattern recognition
+• Medical similarity analysis
+• Anomaly detection"
+Logistic Regression,"• Simple, fast, and interpretable
+• Provides probability estimates
+• Performs well for linearly separable data
+• Robust to small noise
+• Regularization available to prevent overfitting (L1/L2)
+• Works well with large, sparse datasets","• Only models linear decision boundaries (unless features engineered)
+• Sensitive to outliers
+• Requires feature scaling
+• May underperform on non-linear relationships
+• Assumes independent features","• Binary & multi-class classification (One-vs-Rest)
+• Marketing lead scoring
+• Credit approval / fraud detection
+• Medical diagnosis (e.g., disease risk)
+• Text sentiment analysis"
+Naive Bayes,"• Extremely fast and efficient
+• Works well on high-dimensional text data
+• Requires very little training data
+• Handles multi-class problems naturally
+• Simple and interpretable
+• Robust to irrelevant features","• Assumes feature independence (often unrealistic)
+• Struggles with correlated features
+• Zero-frequency problem for unseen values
+• Continuous variables require distribution assumptions
+• May underperform with small sample sizes","• Spam filtering
+• Text / document classification
+• Sentiment analysis
+• Medical text categorization
+• Recommender systems (content-based)"
